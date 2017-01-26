@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMc-Ls-Msf">
+                                <rect key="frame" x="297.5" y="617" width="41.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Odin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGB-Em-hzC">
+                                <rect key="frame" x="36" y="40" width="53" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVI-bu-3eo">
+                                <rect key="frame" x="285" y="40" width="54" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="homeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nqg-XL-n0f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZD-dQ-NeU">
+                                <rect key="frame" x="76" y="613" width="65" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="0.33449534817042048" green="1" blue="0.28374131369407174" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="confrimButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rqk-75-mus"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhn-J8-Nwc">
+                                <rect key="frame" x="10" y="613" width="56" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="0.47001317182624236" blue="0.42196512638410766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URP-Tb-7bp"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMV-7O-0rk" userLabel="StartMenu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chess" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiB-DY-0BQ">
+                                        <rect key="frame" x="146" y="50" width="84" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vH5-nH-a7e">
+                                        <rect key="frame" x="153" y="161" width="70" height="30"/>
+                                        <state key="normal" title="Play ODIN"/>
+                                        <connections>
+                                            <action selector="playOdinButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IH7-CM-sfo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaN-6h-Tqe">
+                                        <rect key="frame" x="153" y="206" width="69" height="30"/>
+                                        <state key="normal" title="Play Local"/>
+                                        <connections>
+                                            <action selector="playLocalButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="duN-0B-MVG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eiB-DY-0BQ" firstAttribute="top" secondItem="kMV-7O-0rk" secondAttribute="top" constant="50" id="0RL-LL-RyD"/>
+                                    <constraint firstItem="eiB-DY-0BQ" firstAttribute="centerX" secondItem="kMV-7O-0rk" secondAttribute="centerX" id="Qdg-6g-KC2"/>
+                                    <constraint firstItem="vH5-nH-a7e" firstAttribute="top" secondItem="eiB-DY-0BQ" secondAttribute="bottom" constant="75" id="dgE-Vh-4OO"/>
+                                    <constraint firstItem="vH5-nH-a7e" firstAttribute="centerX" secondItem="kMV-7O-0rk" secondAttribute="centerX" id="fC7-M8-aYH"/>
+                                    <constraint firstItem="LaN-6h-Tqe" firstAttribute="top" secondItem="vH5-nH-a7e" secondAttribute="bottom" constant="15" id="i0M-MU-B1G"/>
+                                    <constraint firstItem="LaN-6h-Tqe" firstAttribute="centerX" secondItem="kMV-7O-0rk" secondAttribute="centerX" id="rPF-uU-lbb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jhn-J8-Nwc" secondAttribute="bottom" constant="20" id="2ws-TX-GGZ"/>
+                            <constraint firstItem="qVI-bu-3eo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="5UF-Td-F2C"/>
+                            <constraint firstItem="Jhn-J8-Nwc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Gn5-kW-826"/>
+                            <constraint firstItem="WGB-Em-hzC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Mjc-D2-uze"/>
+                            <constraint firstAttribute="trailing" secondItem="kMV-7O-0rk" secondAttribute="trailing" id="OdJ-eO-FQe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oMc-Ls-Msf" secondAttribute="trailing" constant="20" id="TZi-fK-Qs4"/>
+                            <constraint firstItem="kMV-7O-0rk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="a89-c4-sP3"/>
+                            <constraint firstItem="8ZD-dQ-NeU" firstAttribute="leading" secondItem="Jhn-J8-Nwc" secondAttribute="trailing" constant="10" id="aK7-S9-7FK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oMc-Ls-Msf" secondAttribute="bottom" constant="20" id="aMq-C6-0ds"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qVI-bu-3eo" secondAttribute="trailing" constant="20" id="bbV-fk-4cZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8ZD-dQ-NeU" secondAttribute="bottom" constant="20" id="bfA-D2-C5j"/>
+                            <constraint firstItem="WGB-Em-hzC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="dZg-Qv-6nT"/>
+                            <constraint firstAttribute="bottom" secondItem="kMV-7O-0rk" secondAttribute="bottom" id="eek-Wk-o89"/>
+                            <constraint firstItem="kMV-7O-0rk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lWa-zX-B5A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="realCancelButton" destination="Jhn-J8-Nwc" id="HlB-Ka-vNl"/>
+                        <outlet property="realChessTitleLabel" destination="eiB-DY-0BQ" id="eIT-eE-fSh"/>
+                        <outlet property="realConfirmButton" destination="8ZD-dQ-NeU" id="pRA-aZ-QJd"/>
+                        <outlet property="realOdinLabel" destination="WGB-Em-hzC" id="Wsr-4Z-7LD"/>
+                        <outlet property="realPlayLocalButton" destination="LaN-6h-Tqe" id="uG7-25-gP7"/>
+                        <outlet property="realPlayOdinButton" destination="vH5-nH-a7e" id="E0Z-d5-NsT"/>
+                        <outlet property="realStartMenu" destination="kMV-7O-0rk" id="fDd-y1-EyL"/>
+                        <outlet property="realYouLabel" destination="oMc-Ls-Msf" id="EEe-pI-Jz9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
