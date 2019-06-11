@@ -1,5 +1,5 @@
 # Chess-With-Odin
-Fully functional chess game for iOS with integrated AI (Odin)
+Fully functional chess game for iOS with integrated Weak AI (Odin)
 
 
 
